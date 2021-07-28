@@ -56,7 +56,7 @@ const Idletimer = () => {
 
       <Modal isOpen={modalIsOpen} onClick1={logOut} onClick2={stayActive}></Modal>
 
-      <IdleTimer ref={idleTimerRef} timeout={10 * 1000} onIdle={onIdle} />
+      <IdleTimer ref={idleTimerRef} timeout={100 * 1000} onIdle={onIdle} />
     </div>
   );
 };
