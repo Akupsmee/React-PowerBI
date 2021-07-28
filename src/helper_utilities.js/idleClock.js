@@ -4,7 +4,7 @@ import Modal from "./modal";
 
 const Idletimer = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const idleTimerRef = useRef(null);
   const sessionTimeoutRef = useRef(null);
 
