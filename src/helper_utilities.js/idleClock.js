@@ -32,7 +32,12 @@ const Idletimer = () => {
 
   return (
     <div>
-      {isLoggedIn ? <h2>Hello Ikenna</h2> : <h2>Hello Guest</h2>}
+      {isLoggedIn ? <h2>Hello Ikenna</h2> : 
+      <>
+      <h2>Hello Guest</h2>
+      <p style = {{width: "80%", margin: "0 auto", fontSize : "50px"}}>Your session has expired, refresh browser to login</p>
+      </>
+      }
       {isLoggedIn &&
       <>
        <iframe
