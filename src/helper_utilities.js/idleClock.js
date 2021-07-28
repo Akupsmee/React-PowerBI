@@ -24,9 +24,9 @@ const Idletimer = () => {
   const onIdle = () => {
     console.log("user is idle");
     setModalIsOpen(true);
-    sessionTimeoutRef.current = setTimeout(()=>{
-        logOut()
-    },5000)
+    sessionTimeoutRef.current = setTimeout(
+        logOut
+    ,5000)
     
   };
 
@@ -35,21 +35,21 @@ const Idletimer = () => {
       {isLoggedIn ? <h2>Hello Ikenna</h2> : 
       <>
       <h2>Hello Guest</h2>
-      <p style = {{width: "80%", margin: "0 auto", fontSize : "50px"}}>Your session has expired, Click the login button to restore session.</p>
-      <button style={{margin: "30px auto",padding: "20px", width : "200px", fontSize: "30px"}} type="submit" onClick={()=> setIsLoggedIn(true)}>Log In</button>
+      <p style = {{width: "80%", margin: "0 auto", fontSize : "30px"}}>Your session has expired, Click the login button to restore session.</p>
+      <button style={{margin: "30px auto",padding: "20px", width : "200px", fontSize: "30px"}} onClick={()=> setIsLoggedIn(true)}>Log In</button>
       </>
       }
       {isLoggedIn &&
       <>
-       <iframe
+       <iframe 
           title = "iframe"
-          width="800"
+          width="500"
           height="400"
           src="https://app.powerbi.com/view?r=eyJrIjoiY2FjMzhkNDEtY2QwOC00ZTcwLTkxZmEtZjU1NGU2YmEwYjU0IiwidCI6IjBlMGVjNGVlLWUxMTAtNGVhYy1hOGFiLTQzMGM5MzEzMjlhMSJ9"
           frameBorder="0"
           allowFullScreen
         ></iframe>
-        <p style = {{width: "80%", margin: "0 auto", fontSize : "50px"}}>This is a report from power bi you created for XXX company on  28 June 2021.</p>
+        <p style = {{width: "80%", margin: "20px auto", fontSize : "30px"}}>This is a report from power bi you created for XXX company on  28 June 2021.</p>
         
         </>
         }
