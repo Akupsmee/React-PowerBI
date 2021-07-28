@@ -45,8 +45,8 @@ const Idletimer = () => {
           width="800"
           height="400"
           src="https://app.powerbi.com/view?r=eyJrIjoiY2FjMzhkNDEtY2QwOC00ZTcwLTkxZmEtZjU1NGU2YmEwYjU0IiwidCI6IjBlMGVjNGVlLWUxMTAtNGVhYy1hOGFiLTQzMGM5MzEzMjlhMSJ9"
-          frameborder="0"
-          allowFullScreen="true"
+          frameBorder="0"
+          allowFullScreen
         ></iframe>
         <p style = {{width: "80%", margin: "0 auto", fontSize : "50px"}}>This is a report from power bi you created for XXX company on  28 June 2021.</p>
         
@@ -56,7 +56,7 @@ const Idletimer = () => {
 
       <Modal isOpen={modalIsOpen} onClick1={logOut} onClick2={stayActive}></Modal>
 
-      <IdleTimer ref={idleTimerRef} timeout={10 * 1000} onIdle={onIdle} />
+      <IdleTimer ref={idleTimerRef} timeout={20 * 1000} onIdle={onIdle} />
     </div>
   );
 };

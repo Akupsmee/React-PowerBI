@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 
 
-https: Modal.setAppElement("#root"); // for accessibility on the browser, takes care of error warnings.
+Modal.setAppElement("#root"); // for accessibility on the browser, takes care of error warnings.
 
 const Modal1 = ({ isOpen, onClick1, onClick2 }) => {
   // const [isOpen, setIsOpen] = useState(false);
