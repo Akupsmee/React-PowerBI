@@ -33,16 +33,21 @@ const Idletimer = () => {
   return (
     <div>
       {isLoggedIn ? <h2>Hello Ikenna</h2> : <h2>Hello Guest</h2>}
-      {isLoggedIn && <iframe
+      {isLoggedIn &&
+      <>
+       <iframe
           title = "iframe"
           width="800"
           height="400"
           src="https://app.powerbi.com/view?r=eyJrIjoiY2FjMzhkNDEtY2QwOC00ZTcwLTkxZmEtZjU1NGU2YmEwYjU0IiwidCI6IjBlMGVjNGVlLWUxMTAtNGVhYy1hOGFiLTQzMGM5MzEzMjlhMSJ9"
           frameborder="0"
           allowFullScreen="true"
-        ></iframe>}
-
+        ></iframe>
         <p style = {{width: "80%", margin: "0 auto", fontSize : "50px"}}>This is a report from power bi you created for XXX company on  28 June 2021.</p>
+        
+        </>
+        }
+
 
       <Modal isOpen={modalIsOpen} onClick1={logOut} onClick2={stayActive}></Modal>
 
