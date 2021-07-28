@@ -26,7 +26,7 @@ const Modal1 = ({ isOpen, onClick1, onClick2 }) => {
         
         
 
-        <div>
+        <div style={{marginRight : "20px"}}>
           <button onClick={onClick1}>Log me out</button>
           <button onClick={onClick2}>keep me In</button>
         </div>
