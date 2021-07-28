@@ -35,7 +35,8 @@ const Idletimer = () => {
       {isLoggedIn ? <h2>Hello Ikenna</h2> : 
       <>
       <h2>Hello Guest</h2>
-      <p style = {{width: "80%", margin: "0 auto", fontSize : "50px"}}>Your session has expired, refresh browser to login</p>
+      <p style = {{width: "80%", margin: "0 auto", fontSize : "50px"}}>Your session has expired, Click the login button to restore session.</p>
+      <button style={{margin: "30px auto", width : "100px", fontSize: "30px"}} type="submit" onClick={setIsLoggedIn(true)}>Log In</button>
       </>
       }
       {isLoggedIn &&
