@@ -42,7 +42,7 @@ const Idletimer = () => {
           allowFullScreen="true"
         ></iframe>}
 
-        <p style = {{width: "80%", fontSize : "50px"}}>This is a report from power bi you created for XXX company on  28 June 2021.</p>
+        <p style = {{width: "80%", margin: "0 auto", fontSize : "50px"}}>This is a report from power bi you created for XXX company on  28 June 2021.</p>
 
       <Modal isOpen={modalIsOpen} onClick1={logOut} onClick2={stayActive}></Modal>
 
